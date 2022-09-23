@@ -1,11 +1,10 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import Navbar from './Component/Navbar';
-import MainPage from './Pages/Main';
-import { Routes, Route } from 'react-router-dom';
+import React from 'react'
+import './App.css'
+import Navbar from './Component/Navbar'
+import MainPage from './Pages/Main'
+import { Routes, Route } from 'react-router-dom'
 
-function App() {
+const App = (): JSX.Element => {
   return (
     <div className="App">
       <Navbar />
@@ -13,7 +12,7 @@ function App() {
         <Route path="/" element={<MainPage />} />
       </Routes>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
